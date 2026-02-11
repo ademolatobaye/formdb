@@ -1,6 +1,138 @@
-#error{
+/* ----Home Page---- */
+
+#parent{
     position: absolute;
-    font-size: 0.9em;
-    top: 66%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(bisque, whitesmoke);
+}
+body{
+    font-family: calibri;
+}
+#phoneimg{
+    position: absolute;
+    height: 90%;
+    top: 10%;
+    right: 10%;
+}
+p{
+    position: absolute;
+    margin: 13%;
+}
+#simp{
+    /* font-weight: 600; */
+    color: darkred;
+    font-size: 4.0em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#free{
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    color: white;
+}
+#get{
+    position: absolute;
+    color: red;
+    left: 60%;
+}
+#logoimg{
+    position: absolute;
+    height: 4%;
+    top: 2%;
+    left: 2%;
+}
+#linkdiv{
+    position: absolute;
+    gap: 25px;
+    left: 12%;
+    top: 2%;
+    display: flex;
+}
+#start{
+    position: absolute;
+    right: 5%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    top: 1%;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+/* ----Home Page ends--- */
+
+
+/* ----Create Account Page---- */
+
+#container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: brown;
+}
+#home{
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    background-color: indigo; 
+}
+/* #left{
+    position: absolute;
+    height: 95%;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    background-image: url(image/land-o-lakes-inc-o8gGuhfjB2M-unsplash_1600x1067.jpg);
+    background-size: cover;
+} */
+#right{
+    position: absolute;
+    height: 95%;
+    width: 50%;
+    bottom: 0;
+    justify-self: center;
+    background-color: aliceblue;
+}
+#divform{
+    position: absolute;
+    height: 72%;
+    width: 65%;
+    margin: 15%;
+    background-color: whitesmoke;
+    border-radius: 20px 0px 20px 0px;
+}
+fieldset{
+    border-radius: 20px;
+}
+legend{
+    text-align: center;
+    background-color: crimson;
+    border-radius: 20px;
+    color: white;
     font-weight: 600;
+}
+input{
+    width: 380px;
+    padding: 12px;
+}
+button{
+    width: 410px;
+    padding: 12px;
+    background: linear-gradient(darkred,crimson);
+    border: 0;
+    outline: none;
+    color: white;
 }
