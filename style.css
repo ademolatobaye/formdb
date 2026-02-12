@@ -2,1182 +2,200 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
     left: 0;
-    background-color: indigo;
+    top: 0;
 }
 body{
-    font-family: calibri;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#greet{
+#overlay{
     position: absolute;
-    top: 2%;
-    left: 5%;
-    color: black;
-    font-size: 13px;
-    font-weight: bolder;
+    height: 15%;
+    width: 100%;
+    top: 0;
+    background-color: rgb(24, 24, 151);
 }
-#cont1{
+#first{
     position: absolute;
-    height: 98%;
-    width: 50%;
-    top: 1%;
-    left: 3%;
-    border-radius: 50px;
-    background-color: azure;
-}
-#cont2{
-    position: absolute;
-    height: 98%;
-    width: 40%;
-    top: 1%;
-    right: 2%;
-    border-radius: 50px;
-    background-color: azure;
-}
-#img1{
-    position: absolute;
-    height: 5%;
-    left: 45%;
-    top: 1%;
-}
-#img2{
-    position: absolute;
-    height: 5%;
-    left: 48%;
-    top: 1%;
-}
-#table1{
-    position: absolute;
-    top: 19%;
-    left: 30%;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 65%;
-    height: 7%;
-    font-size: 19px;
-    font-weight: bolder;
-    border-radius: 30px;
-    border: 0;
-    background-color: rgb(248, 244, 186);
+    background-color: white;
 }
-#table2{
+#logo{
     position: absolute;
-    top: 30%;
-    left: 5%;
-    width: 90%;
-    height: 10%;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px;
-    border: 0;
-    background-color: rgb(248, 244, 186);
-}
-#prest{
-    position: absolute;
-    top: 6%;
-    left: 20%;
-   font-size: 26px; 
-   font-weight: bolder;
-   color: maroon;
-}
-#prest2{
-    position: absolute;
-    top: 8%;
+    height: 62%;
+    top: 20%;
     left: 15%;
-   font-size: 26px; 
-   font-weight: 600;
-   color: maroon;
 }
-#result{
+#par{
     position: absolute;
-    top: 14%;
-    left: 45%;
-    font-size: 26px;
-    font-weight: bolder;
-    color: maroon;
-}
-#form3{
-    position: absolute;
-    top: 12%;
+    top: 78%;
     left: 20%;
 }
-#student1{
-    position: relative;
-    left: 10%;
-    width: 220px;
-    padding: 6px;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 20px;
-    text-align: center;
-    outline: none;
-    border: none;
-    background-color: rgb(248, 244, 186);
+#thanks{
+    font-size: 24px;
+    color: rgb(24, 24, 151);
 }
-#class1{
+#we{
+    font-size: 17px;
+}
+#second{
     position: absolute;
-    top: 12%;
-    left: 65%;
-    height: 5%;
-    font-weight: 600;
-    font-size: 14px;
-    color: rgb(71, 70, 70);
-    width: 90px;
-    border-radius: 50px;
-    outline: none;
-    border: none;
-    background-color: rgb(248, 244, 186);
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background-color: white;
 }
-#form4{
+#parr{
     position: absolute;
-    top: 21%;
-    left: 5%;
+    left: 1%;
+    top: 15%;
 }
-#student2{
-    height: 5%;
-    width: 230px;
+#create{
+    font-weight: bolder;
+    font-size: 37px;
+}
+#free{
+    font-size: 18px;
+}
+#form{
+    position: absolute;
+    left: 1%;
+    top: 30%;
+}
+#firstname{
     padding: 10px;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    background-color: rgb(248, 244, 186);
-}
-#class2{
-    position: absolute;
-    top: 20.5%;
-    left: 65%;
-    height: 5%;
-    width: 90px;
-    padding: 3px;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    color: rgb(71, 70, 70);
-    background-color: rgb(248, 244, 186);
-}
-#subject1{
-    position: absolute;
-    height: 7%;
-    top: 19%;
-    left: 2%;
-    width: 150px;
-    font-size: 29px;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 30px;
-    background-color: rgb(248, 244, 186);
-}
-#subject2{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 28.5%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject3{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 35%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject4{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 41%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject5{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 47%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject6{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 53%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject7{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 59%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject8{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 65%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject9{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 71%;
-    border-radius: 20px;
-    outline: none;
-    height: 4%;
-    background-color: rgb(248, 244, 186);
-}
-#subject10{
-    position: absolute;
-    left: 4%;
-    width: 120px;
-    font-size: 10px;
-    font-weight: 550;
-    top: 77.5%;
-    border-radius: 20px;
-    height: 4%;
-    outline: none;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt2{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt3{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt4{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt5{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt6{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt7{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt8{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt9{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#subjectt10{
-    height: 5%;
-    padding: 6px;
-    width: 150px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#form1{
-    /* position: absolute; */
-    top: 28%;
-    left: 32%;
-}
-#test1{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test2{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam1{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall1{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test3{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test4{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam2{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall2{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test5{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test6{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam3{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall3{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test7{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test8{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam4{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall4{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test9{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test10{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam5{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall5{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test11{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test12{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam6{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall6{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test13{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test14{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam7{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall7{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test15{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test16{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam8{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall8{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test17{
-    position: absolute;
-    text-align: center;
-    right: 56%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#test18{
-    position: absolute;
-    text-align: center;
-    right: 39%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#exam9{
-    position: absolute;
-    text-align: center;
-    right: 22%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#totall9{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    height: 4%;
-    width: 105px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#form2{
-    position: absolute;
-    top: 32%;
-    left: 37%;
-}
-#total1{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
-}
-#grade1{
-    height: 5%;
-    padding: 6px;
-    width: 90px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total2{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade2{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total3{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade3{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total4{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade4{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total5{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade5{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total6{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade6{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total7{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade7{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total8{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade8{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#total9{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#grade9{
-    height: 5%;
-    padding: 6px;
-    border-radius: 20px;
-    width: 85px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark1{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark2{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark3{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark4{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark5{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark6{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark7{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark8{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-#remark9{
-    height: 5%;
-    padding: 6px;
-    width: 85px;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    background-color: rgb(248, 244, 186);
-}
-/* #form5{
-    position: absolute;
-    top: 91%;
-    left: 5%;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+}
+#surname{
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+}
+#mobile{
+    padding: 8px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+    width: 370px;
+}
+#newpass{
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+    width: 370px;
+}
+/* #password2{
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+    width: 370px;
 } */
-/* #form6{
-    position: absolute;
-    top: 91%;
-    left: 70%;
-} */
-/* #form7{
-    position: absolute;
-    top: 91%;
-    left: 51%;
-} */
-#teacher{
-    position: absolute;
-    left: 3%;
-    bottom: 5%;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 4px;
-    background-color: rgb(248, 244, 186);
+#select{
+    padding: 5px;
 }
-#teacher1{
-    position: absolute;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 6px;
-    width: 200px;
-    bottom: 5%;
-    left: 5%;
-    background-color: rgb(248, 244, 186);
+#select2{
+    padding: 5px;
+    width: 75px;
 }
-#teach{
-    position: absolute;
-    left: 4%;
-    bottom: 9%;
-    font-size: 14px;
-    font-weight: 550;
-}
-#teacher2{
-    position: absolute;
-    left: 6%;
-    bottom: 10%;
-    font-size: 14px;
-    font-weight: 550;
-}
-#principal{
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 4px;
-    background-color: rgb(248, 244, 186);
-}
-#principal1{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    border-radius: 20px;
-    border: 1px solid rgb(128, 124, 124);
-    outline: 1px solid rgb(128, 124, 124);
-    padding: 6px;
-    width: 210px;
-    background-color: rgb(248, 244, 186);
-}
-#prin{
-    position: absolute;
-    right: 15%;
-    bottom: 10%;
-    font-size: 14px;
-    font-weight: 550;
+#select3{
+    padding: 5px;
 }
 #submit{
-    position: absolute;
-    padding: 7px;
-    bottom: 5%;
-    left: 37%;
-    width: 150px;
-    outline: 1px solid rgb(128, 124, 124);
-    border: 1px solid rgb(128, 124, 124);
-    border-radius: 20px;
-    background-color: rgb(248, 244, 186);
+    padding: 14px;
+    width: 180px;
+    border-radius: 7px;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: olivedrab;
 }
-#stud{
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    font-weight: 600;
-    font-size: 16px;
+#terms{
+    text-decoration: none;
+    color: rgb(24, 24, 151);
+    font-size: 13px;
 }
-#clas{
-    position: absolute;
-    top: 25%;
-    right: 20%;
-    font-weight: 600;
-    font-size: 16px;
+#page{
+    font-size: 13px;
 }
-#classteacher{
+#why{
     position: absolute;
-    bottom: 20%;
-    left: 10%;
-    font-weight: 600;
-    font-size: 16px;
+    top: 60%;
+    left: 45%;
+    text-decoration: none;
+    color: rgb(24, 24, 151);
+    font-size: 13px;
 }
-#principalremark{
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    font-weight: 600;
-    font-size: 16px;
+#pclick{
+    font-size: 13px;
 }
-#time{
+#face{
     position: absolute;
-    font-weight: 600;
-    top: 20%;
-    right: 15%;
+    font-weight: bolder;
+    left: 5%;
+    margin-top: 2%;
+    color: white;
+    font-size: 45px;
 }
-#greet{
+#pass{
     position: absolute;
-    font-weight: 600;
-    font-size: 1.0em;
-    top: 20%;
-    left: 15%;
+    top: 15%;
+    left: 78%;
+    color: white;
 }
-/* #tr{
+#pass2{
     position: absolute;
-    right: 5%;
-} */
+    padding: 3px;
+    top: 40%;
+    left: 78%;
+    width: 130px;
+    outline: 0;
+    background-color: khaki;
+    border: 1px solid black;
+}
+#email{
+    position: absolute;
+    top: 15%;
+    left: 66%;
+    color: white;
+}
+#email2{
+    position: absolute;
+    padding: 3px;
+    top: 40%;
+    left: 66%;
+    width: 130px;
+    outline: 0;
+    background-color: khaki;
+    border: 1px solid black;
+}
+#for{
+    position: absolute;
+    top: 70%;
+    left: 78%;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+#sub{
+    position: absolute;
+    left: 90%;
+    top: 40%;
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 5px;
+    font-size: 11px;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(24, 24, 151);
+}
