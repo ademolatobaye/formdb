@@ -1,6 +1,85 @@
-#error{
+#parent{
     position: absolute;
-    font-size: 0.9em;
-    top: 66%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+}
+body{
+    font-family: calibri;
+}
+#left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url(img/4.jpg);
+    background-size: cover;
+}
+#right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(128, 0, 128, 0.5);
+}
+#divform{
+    position: absolute;
+    height: 88%;
+    width: 70%;
+    margin: 8%;
+    background-color: whitesmoke;
+    border-radius: 20px 0px 20px 0px;
+}
+fieldset{
+    border-radius: 20px;
+}
+legend{
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(165, 42, 42, 0.9);
+}
+input.transition{
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    transition: 1s ease-out;
+}
+input.transition:focus{
+   width: 400px;
+}
+select.transition{
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    transition: 1s ease-out;
+}
+select.transition:focus{
+   width: 400px;
+}
+button{
+    padding: 12px;
+    width: 430px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: white;
     font-weight: 600;
+    background-color: rgb(117, 2, 25);
+}
+input{
+    outline: none;
 }
