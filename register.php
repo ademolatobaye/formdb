@@ -88,7 +88,7 @@ if(!isset($_SESSION["email"])){
             <div class="col-11 col-md-10 col-lg-9 mx-auto">
               <h3 class="text-12 mb-4">Sign Up</h3>
 
-              <form id="signupForm" method="post">
+              <form id="signupForm" method="post" enctype= "multipart/form-data">
 
                 <?php
                 include("db_conn.php");
@@ -103,9 +103,23 @@ if(!isset($_SESSION["email"])){
                   $password = $_REQUEST["password"];
 
                   $_SESSION["fullname"] = $fullname;
+
+                  /*Client Passport Upload*/
+                    $img = $_POST['image'];
+                    $folderPath = "photo/";
+
+                    $image_parts = explode(";base64,", $img);
+                    $image_type_aux = explode("image/", $image_parts[0]);
+                    $image_type = $image_type_aux[1];
+
+                    $image_base64 = base64_decode($image_parts[1]);
+                    $fileName = uniqid() . '.png';
+
+                    $file = $folderPath . $fileName;
+                    file_put_contents($file, $image_base64);
                   
                   // UPDATING FULLNAME,NUMBER,PASSWORD,UIN AMD EMAIL ON SAME TABLE IN THE DATABASE.
-                   $sql="UPDATE otpver SET fullname='$fullname', phone = '$number', `password`=PASSWORD('$password'), uin = '$uin' WHERE email='$email'";
+                   $sql="UPDATE otpver SET fullname='$fullname', phone = '$number', `password`=PASSWORD('$password'), uin = '$uin', photo = '$fileName' WHERE email='$email'";
                     $result=mysqli_query($conn, $sql);
                     if($result){
 
@@ -115,17 +129,48 @@ if(!isset($_SESSION["email"])){
                     // END
 
                 
-                
-
                 }
 
                 ?>
+                
+                <label class="form-label fw-500" for="webcam">Photo Capture</label>
+                <div class="mb-3 icon-group icon-group-end">
+                  <div id="my_camera"></div>
+                    <input class="btn btn-primary" type="button" value="Take Snapshot" onClick="take_snapshot()">
+                    <input type="hidden" name="image" class="image-tag">
+                </div>
+
+                <label class="form-label fw-500" for="webcam">Photo Result</label>
+                <div class="mb-3 icon-group icon-group-end">
+                  <div id="results"> Your captured image will appear here.</div>
+                </div>
+
+                 <script src="js/webcam.min.js"></script>
+
+            <script language="JavaScript">
+
+    Webcam.set({
+        width: 490,
+        height: 390,
+        image_format: 'jpeg',
+        jpeg_quality: 100
+    });
+
+    Webcam.attach( '#my_camera' );
+
+    function take_snapshot() {
+        Webcam.snap( function(data_uri) {
+            $(".image-tag").val(data_uri);
+            document.getElementById('results').innerHTML = '<img src="'+data_uri+'"/>';
+        } );
+    }
+</script>
 
                 <label class="form-label fw-500" for="fullName">Full Name</label>
                 <div class="mb-3 icon-group icon-group-end">
                   <input type="text" class="form-control bg-light border-light" id="fullName" required="" placeholder="Full Name" name="fullname">
                   <span class="icon-inside text-muted"><i class="fas fa-user"></i></span>
-                 </div>
+                </div>
 
                 <label class="form-label fw-500" for="fullName">Email Address</label>
                 <div class="mb-3 icon-group icon-group-end">
@@ -136,7 +181,7 @@ if(!isset($_SESSION["email"])){
                 <label class="form-label fw-500" for="emailAddress">Phone Number</label>
                 <div class="mb-3 icon-group icon-group-end">
                   <input type="number" class="form-control bg-light border-light" id="emailAddress" required="" placeholder="Phone Number" name="number">
-                  <span class="icon-inside text-muted"><i class="fas fa-envelope"></i></span>
+                  <span class="icon-inside text-muted"><i class="fas fa-phone"></i></span>
                  </div>
 
                 <div class="mb-3 icon-group icon-group-end">
@@ -147,8 +192,8 @@ if(!isset($_SESSION["email"])){
                 <label class="form-label fw-500" for="loginPassword">Password</label>
                 <div class="mb-3 icon-group icon-group-end">
                   <input type="password" class="form-control bg-light border-light" id="loginPassword" required="" placeholder="Password" name="password">
-                  <span class="icon-inside text-muted"><i class="fas fa-lock"></i></span>
-				</div>
+                  <span class="icon-inside text-muted"><i class="fas fa-eye"></i></span>
+				        </div>
 
                 <div class="form-check my-4">
                   <input id="agree" name="agree" class="form-check-input" type="checkbox">

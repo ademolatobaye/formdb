@@ -116,7 +116,7 @@ session_start();
                     $result=mysqli_query($conn, $sql);
                     if($result){
 
-//         //Create instance of PHPMailer
+        //Create instance of PHPMailer
 // 	$mail = new PHPMailer();
 // //Set mailer to use smtp
 // 	$mail->isSMTP();
@@ -238,11 +238,12 @@ session_start();
                       echo "<script>window.location.href='newotp.php'</script>";
                     }
                     // END
-                   
-
-              }
+              
 
                 } 
+
+              }
+              
 
               
 
