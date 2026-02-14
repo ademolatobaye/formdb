@@ -1,6 +1,6 @@
 <?php
 
-// DATABASE USERNAME, PASSWORD, DATABASE NAME
+// DATABASE CONNECTION ( USERNAME, PASSWORD, DATABASE NAME).
 $conn = new mysqli("localhost", "wetinde3_demo", "Omomejih08", "wetinde3_ademola");
 
 if(mysqli_connect_errno()){
